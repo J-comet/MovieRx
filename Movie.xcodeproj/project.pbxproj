@@ -22,6 +22,7 @@
 		C04E79782AF8F38E00E5AD8D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E79772AF8F38E00E5AD8D /* Router.swift */; };
 		C04E797A2AF8F48300E5AD8D /* RequestBoxOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E79792AF8F48300E5AD8D /* RequestBoxOffice.swift */; };
 		C04E797C2AF8F56500E5AD8D /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E797B2AF8F56500E5AD8D /* Encodable+Extension.swift */; };
+		C04E79842AF8F97A00E5AD8D /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E79832AF8F97A00E5AD8D /* MovieListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C04E79772AF8F38E00E5AD8D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C04E79792AF8F48300E5AD8D /* RequestBoxOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBoxOffice.swift; sourceTree = "<group>"; };
 		C04E797B2AF8F56500E5AD8D /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		C04E79832AF8F97A00E5AD8D /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		C04E794E2AF8F01A00E5AD8D /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				C04E79822AF8F96900E5AD8D /* Cell */,
 				C04E79742AF8F32400E5AD8D /* Model */,
 				C04E79712AF8F29300E5AD8D /* Network */,
 				C04E796E2AF8F06300E5AD8D /* Scene */,
@@ -128,6 +131,14 @@
 				C04E79752AF8F33100E5AD8D /* ResponseDailyBoxOffice.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		C04E79822AF8F96900E5AD8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C04E79832AF8F97A00E5AD8D /* MovieListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04E79842AF8F97A00E5AD8D /* MovieListCell.swift in Sources */,
 				C04E79542AF8F01A00E5AD8D /* MovieListVC.swift in Sources */,
 				C04E79702AF8F0C200E5AD8D /* MovieListView.swift in Sources */,
 				C04E79732AF8F29C00E5AD8D /* APIManager.swift in Sources */,
