@@ -30,6 +30,10 @@ final class MovieListCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configCell(row: DailyBoxOfficeList) {
+        nameLabel.text = row.movieNm
+    }
+    
     private func configure() {
         contentView.addSubview(nameLabel)
     }
@@ -40,5 +44,4 @@ final class MovieListCell: UICollectionViewCell {
             make.leading.equalToSuperview().inset(16)
         }
     }
-    
 }

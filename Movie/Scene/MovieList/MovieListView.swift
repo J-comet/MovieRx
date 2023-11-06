@@ -17,6 +17,12 @@ final class MovieListView: UIView {
         return collectionView
     }()
     
+    private let indicatorView = {
+        let view = UIActivityIndicatorView()
+        view.hidesWhenStopped = true
+        view.style = .large
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,15 +34,28 @@ final class MovieListView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func showLoadingView() {
+        indicatorView.startAnimating()
+    }
+    
+    func hideLoadingView() {
+        indicatorView.stopAnimating()
+    }
+    
     private func configure() {
         backgroundColor = .white
         addSubview(collectionView)
+        addSubview(indicatorView)
     }
     
     private func setLayout() {
         collectionView.snp.makeConstraints { make in
             make.top.bottom.equalTo(safeAreaLayoutGuide)
             make.horizontalEdges.equalToSuperview()
+        }
+        
+        indicatorView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
         }
     }
     
